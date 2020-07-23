@@ -1,0 +1,21 @@
+$ cd ~/catkin_ws/src/
+
+$ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+
+$ cd ~/catkin_ws/
+
+$ catkin_make
+
+$ cd ~/catkin_ws/src/
+
+$ git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+
+$ cd ~/catkin_ws/
+
+$ catkin_make
+
+$ source devel/setup.bash
+
+$ export TURTLEBOT3_MODEL=burger
+
+$ roslaunch turtlebot3_fake turtlebot3_fake.launch
